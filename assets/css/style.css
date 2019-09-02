@@ -1,7 +1,7 @@
 /*style for header */
 header {
   width: 100%;
-  height: 60px; 
+  height: 90px; 
   background-color:  #ffffff;
   border-bottom: solid #cccccc 1px;  
   top: 0px;
@@ -21,15 +21,22 @@ header {
 
 /*style for name div in nav container*/
 .name {
-  font-size: 125%;
+  font-size: 30px;
   text-align: center;
   float: left; 
-  height: 60px; 
+  width: 250px;
+  height: 90px;
   background-color: #4aaaa5;
   padding-left: 15px; 
   padding-right: 15px; 
   z-index: 1;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
 }
+
 
 /* Style for Nav list in navigation bar*/
 
@@ -37,6 +44,7 @@ header {
     padding-top: 20px; 
     color: #777777;
     float: right; 
+    font-size: 18px; 
   }
    
 /*Style for unordered list / in the Nav List */
@@ -112,35 +120,10 @@ body {
     background-color: #ffffff;
     text-align: left;
     border: solid #cccccc .5px; 
-    margin-top: 90px; 
+    margin-top: 120px; 
     
 }
 
-.contactMeContainer  {
-    width: 960px; 
-    height: 400px; 
-    margin: auto; 
-    background-color: #ffffff;
-    text-align: left;
-    border: solid #cccccc .5px; 
-    margin-top: 90px; 
-    
-}
-
-/*Style for border line under page title */
-.borderLine{
-  width: 930px; 
-  border-bottom: solid #cccccc 2.0px; 
-  z-index: 5;
-  margin-left: 15px; 
-}
-
-/*Style for border line for container div on contact page */
-.container .borderLine{
-
-  margin-left: 0px; 
-  margin-bottom: 10px; 
-}
 
 
 /*Style for paragraph */
@@ -162,7 +145,7 @@ a img {
 }
 
 /*Style for project photos on portfolio page  */
-.box img {
+.portfolioContainer img {
   position: relative;
   width: 200px; 
   height: 160px; 
@@ -192,12 +175,13 @@ footer {
 
  /*style for h2 tags */
 h2 {
+  border-bottom: 3px solid #dddddd;
   color: #4aaaa5;
-  margin-left: 15px; 
-  margin-bottom: 20px; 
   font-family: 'Georgia', Times, Times New Roman, serif;
-
-
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  font-size: 30px;
 }
 
 /*style for h2 tag in container div */
@@ -208,15 +192,15 @@ h2 {
 }
 
 /*style for box container on portfolio page */
- .box{
+ .portfolioContainer{
   margin:0; 
   padding: 0; 
   width: 960px; 
-  height: 700px; 
+  height: 800px; 
   background-color: #ffffff;
   border: solid #cccccc .5px; 
   border-radius: 5px;
-  margin-top: 90px; 
+  margin-top: 120px; 
   float: left; 
  
 }
@@ -236,7 +220,7 @@ h2 {
 
 .column {
   float: left;
-  width: 50%;
+  width: 25%;
   padding: 5px;
 }
 
@@ -287,7 +271,7 @@ input[type=submit]:hover {
   padding-top: 50px; 
   border: solid #cccccc .5px; 
   border-radius: 5px;
-  margin-top: 90px; 
+  margin-top: 120px; 
   
 
 }
@@ -323,14 +307,43 @@ h3{
 
 @media screen and (max-width: 980px) {
   .container{
-    
-    background-color: blue; 
     float: left;
     margin-right: 100px; 
-    width: 80%;
+    width: 85%;
+    background-color: red; 
+    margin-left: 30px; 
     
   }
   }
+
+
+  @media screen and (max-width: 768px) {
+    .borderLine{
+      width: 100%;
+      margin-left: 0px; 
+    
+    }
+    }
+
+  @media screen and (max-width: 980px) {
+    .portfolioContainer{
+      background-color: red;  
+      width: 85%; 
+      margin-left: 30px; 
+    
+    }
+    }
+
+    
+
+    @media screen and (max-width: 980px) {
+    .column {
+      float: left;
+      width: 40%;
+      padding: 5px;
+    }
+  }
+    
 
   @media screen and (max-width: 980px) {
     body {
@@ -339,6 +352,14 @@ h3{
  
   
   }
+
+  @media screen and (max-width: 980px) {
+    .name {
+      margin-left: 30px; 
+  
+    }
+  }
+  
 
 
 @media screen and (max-width: 980px) {
@@ -352,7 +373,6 @@ width: 100%;
 
 @media screen and (max-width: 980px) {
 header{
-
   width: 100%; 
   float: left; 
 
@@ -364,6 +384,7 @@ header{
 @media screen and (max-width: 980px) {
 .borderLine{
   width: 100%; 
+  margin-left: 0px; 
 
 }
 }
@@ -376,12 +397,6 @@ header{
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container{
-    width: 100%; 
-
-  }
-  }
 
 
 @media screen and (max-width: 768px) {
@@ -393,22 +408,6 @@ width: 100%;
 }
 }
 
-
-@media screen and (max-width: 768px) {
-header{
-
-  width: 100%; 
-
-}
-}
-
-
-@media screen and (max-width: 768px) {
-body {
-
-  width: 100%;
-}
-}
 
 
 
@@ -422,11 +421,22 @@ body {
 
 
 @media screen and (max-width: 768px) {
-  .box{
+  .portfolioContainer{
     width: 100%;
     margin: 0 auto;
+    background-color: blue; 
+    margin-top: 120px; 
+    margin-left: 30px; 
   
   }
+  }
+
+  @media screen and (max-width: 758px) {
+    .column {
+      float: left;
+      width: 40%;
+      padding: 5px;
+    }
   }
   
 
@@ -434,10 +444,8 @@ body {
 
   @media screen and (max-width: 640px) {
       .name {
-        height: auto; 
         width: 100%;
         margin: 0;
-        text-align: center; 
         line-height: 3em;
         display: inline-block;
         position: static; 
@@ -452,19 +460,22 @@ body {
         display: inline-block;
         margin:0 auto;
         width:100%;
-        text-align: center;
+        margin-bottom: 70px; 
+        background-color: green; 
       }
       }
 
       @media screen and (max-width: 640px) {
-        .box{
+        .portfolioContainer{
           width: 100%; 
           height: auto; 
           margin: auto; 
           text-align: left;
+          background-color: green; 
 
       }
     }
+    
 /*style for nav container*/
 @media screen and (max-width: 640px) {
   .navContainer{
@@ -522,7 +533,6 @@ body {
 @media screen and (max-width: 640px) {
 .container h2 {
   padding-bottom: 10px; 
-  margin-top: 10px; 
   text-align: center;
 
 }
@@ -551,14 +561,6 @@ h2.PortfolioTitle{
 p {
   font-size: 1.5em;
 }
-}
-
-@media screen and (max-width: 640px) {
-  .contactMeContainer {
-  width: 100%;
-  height: auto; 
-  margin-top: 0px; 
-  }
 }
 
 
