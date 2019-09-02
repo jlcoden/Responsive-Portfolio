@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Home Page</title>
+
+    <!--Link to CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   </head>
+   
+      <body> 
+        
+        <header>
+              <!--Navigation Holder-->
+              <div class="navContainer">
+
+                    <!--Div container for Name in corner of navigation bar-->
+                    <div class="name">
+                          <!--Class for link in Name Div-->
+                          <a class ="namelink" href="index.html">Josh Cosson</a>
+                    </div>
+                          <nav>
+                           <!-- navigation drop down items-->
+                                <ul class="nav-list">
+                                    <li>
+                                        <a class ='navOptions' href="index.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a class ='navOptions' href="portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a class ='navOptions' href="contact.html">Contact</a>
+                                    </li> 
+                                </ul>
+                            </nav>
+                      </div>
+          </header>
+
+                  <!-- Div Container for Contact Me form-->
+                  <div class="contactMeContainer">
+
+                      <!--Contact me h2 title-->
+                      <h2>Contact Me</h2>   
+                      <!--div for adding a horizontal border-->
+                      <div class="borderLine"> </div> 
+
+                          <!--form-->
+                          <form action="action_page.php">
+                                <!--Name input field-->
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="fullname" placeholder="Your name..">
+                                <!--Email input field-->
+                                <label for="email">Email</label>
+                                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                                <!--Message input field-->
+                                <label for="message">Message</label>
+                                <textarea id="message" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
+                                <!--Submit Button-->
+                                <input type="submit" value="Submit">
+                          </form>
+                    </div>
+                        <!--footer for bottom of page-->
+                        <footer>
+                              <p class="footer">Copywrite&#169;</p>
+                      </footer>
+                  
+        </body>
+</html>
