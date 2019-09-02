@@ -41,10 +41,12 @@ header {
 /* Style for Nav list in navigation bar*/
 
 .nav-list {
-    padding-top: 20px; 
+    margin-top: 30px; 
     color: #777777;
     float: right; 
     font-size: 18px; 
+    line-height: 18px;
+   
   }
    
 /*Style for unordered list / in the Nav List */
@@ -149,7 +151,7 @@ a img {
   position: relative;
   width: 200px; 
   height: 160px; 
-  border: solid #cccccc 1px; 
+  border: solid #cccccc 1.5px; 
 
 
 }
@@ -198,7 +200,7 @@ h2 {
   width: 960px; 
   height: 800px; 
   background-color: #ffffff;
-  border: solid #cccccc .5px; 
+  border: solid #cccccc 2px; 
   border-radius: 5px;
   margin-top: 120px; 
   float: left; 
@@ -269,7 +271,7 @@ input[type=submit]:hover {
   height: 500px; 
   background-color:  #ffffff;
   padding-top: 50px; 
-  border: solid #cccccc .5px; 
+  border: solid #cccccc 2px; 
   border-radius: 5px;
   margin-top: 120px; 
   
