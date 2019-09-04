@@ -472,7 +472,6 @@ width: 100%;
 @media screen and (max-width: 640px) {
 .container h2 {
   padding-bottom: 10px; 
-  text-align: center;
 }
 }
 
